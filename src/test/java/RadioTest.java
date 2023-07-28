@@ -216,7 +216,7 @@ public class RadioTest {
     @Test
     public void increaseVolume2() {
         Radio radio = new Radio();
-        radio.setSoundVolume(101);
+        radio.setSoundVolume(100);
         radio.increaseVolume();
         int expected = 100;
         int actual = radio.getSoundVolume();

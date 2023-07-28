@@ -29,10 +29,10 @@ public class Radio {
     }
 
     public void decreaseVolume() {
-        if (soundVolume != 0) {
-            soundVolume = soundVolume -1;
-        } else {
-            soundVolume = 0;
+        if (soundVolume > 0) {
+            soundVolume = soundVolume - 1;
+        }else{
+            soundVolume =0;
         }
     }
 
