@@ -4,6 +4,7 @@ import ru.netology.javaqa.radio.java.Radio;
 
 public class RadioTest {
     Radio radio = new Radio(10);
+
     @Test
     public void shouldNextStation() {
         Radio radio = new Radio(10);
@@ -14,15 +15,15 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
-        @Test
+    @Test
 
-        public void shouldNextStationAfterMax() {
-            radio.setCurrentStationNumber(9);
-            radio.next();
-            int expected1 = 0;
-            int actual1 = radio.getCurrentStationNumber();
-            Assertions.assertEquals(expected1, actual1);
-        }
+    public void shouldNextStationAfterMax() {
+        radio.setCurrentStationNumber(9);
+        radio.next();
+        int expected1 = 0;
+        int actual1 = radio.getCurrentStationNumber();
+        Assertions.assertEquals(expected1, actual1);
+    }
 
     @Test
     public void shouldSetRadioWave() {
@@ -320,5 +321,3 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
-
-}
