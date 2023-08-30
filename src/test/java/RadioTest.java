@@ -320,4 +320,5 @@ public class RadioTest {
         int actual = radio.getSoundVolume();
         Assertions.assertEquals(expected, actual);
     }
+}
 
